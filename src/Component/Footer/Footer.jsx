@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-    <div className=' fixed-bottom   bg-dark text-white '>  
+    <div className='   bg-dark text-white w-100'>  
   <div className='  d-flex   justify-content-center px-4  gap-4 mt-3'>
     <div className='px-4 mt-3'>
       <h3> LOCATION</h3>
@@ -26,7 +26,7 @@ export default function Footer() {
     </div>
 
   </div>
-  <div className=' bg-black  mb-0 mt-4  '>
+  <div className=' bg-black py-4  mb-0 mt-4  '>
     <p className='mt-4'>Copyright © Your Website 2021</p>
   </div>
   </div>

@@ -73,3 +73,15 @@ button:focus-visible {
  background-color:   #1ABC9C ;
 
 }
+
+.layout{
+  right: 110% !important;
+  transition: all .4s;
+}
+.parentt:hover .layout{
+  right: 0% !important;
+}
+
+.Box-Layout{
+  z-index: 10000;
+}
