@@ -8,12 +8,16 @@ export default function Portfolio() {
   let [imgPath, setImgPath] = useState("");
   return (
     <>
-      <div className="container-fluid text-center">
+
+    
+
+    <div className=" mt-4 py-4">  
+    <div className="container-fluid text-center">
         <h1 className="text-black"> portfolio component</h1>
 
         <div className="d-flex  justify-content-center gap-2 position-relative ">
           <div className="h-25 w-25 border-1 border-white me-4 mt-2 gap-4 position-absolute boutton-0 end-50 bg-black">
-            {" "}
+             {" "} 
           </div>
           <div>
             {" "}
@@ -22,6 +26,102 @@ export default function Portfolio() {
           <div className="w-25 h-25 bg-black border-1 border-white ms-4 gap-4 mt-2 position-absolute boutton-0 start-50"></div>
         </div>
       </div>
+      <div className="container mx-4">
+        <div className="row g-3">
+          <div
+            className=" overflow-hidden parentt col-md-4 position-relative"
+            onClick={() => {
+              setImgPath(oneone);
+            }}
+          >
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <img src={oneone} className="w-100" alt="" />
+          </div>
+          <div
+            className=" overflow-hidden parentt col-md-4 position-relative"
+            onClick={() => {
+              setImgPath(tow);
+            }}
+          >
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <img src={tow} className="w-100" alt="" />
+          </div>
+
+          <div className=" overflow-hidden parentt col-md-4 position-relative"  onClick={() => {
+              setImgPath(three);
+            }}>
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <img src={three} className="w-100" alt="" />
+          </div>
+          <div
+            className=" overflow-hidden parentt col-md-4 position-relative"
+            onClick={() => {
+              setImgPath(oneone);
+            }}
+          >
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <img src={oneone} className="w-100" alt="" />
+          </div>
+          <div
+            className=" overflow-hidden parentt col-md-4 position-relative"
+            onClick={() => {
+              setImgPath(tow);
+            }}
+          >
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <img src={tow} className="w-100" alt="" />
+          </div>
+
+          <div className=" overflow-hidden parentt col-md-4 position-relative"  onClick={() => {
+              setImgPath(three);
+            }}>
+            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
+              <i className="fa-regular fa-square-plus mt-4 "></i>
+            </div>
+            <img src={three} className="w-100" alt="" />
+          </div>
+
+         
+        </div>
+      </div>
+
+      {imgPath ? (
+        <div
+          onClick={() => {
+            setImgPath("");
+          }}
+          className="Box-Layout bg-opacity-25 g position-fixed top-0 end-0 start-0 bottom-0 bg-danger d-flex justify-content-center align-items-center"
+        >
+          <img onClick={(e)=>{
+            e.stopPropagation()
+          }} src={imgPath} className="w-50" alt="" />
+        </div>
+      ) : (
+        ""
+      )}
+
+
+
+        </div>
+     
+      
+   
 
       {/* <div className="container-fluid">
         <div className={`///////   d-flex gap-3  `}>
@@ -238,95 +338,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div> */}
-      <div className="container mx-4">
-        <div className="row g-3">
-          <div
-            className=" overflow-hidden parentt col-md-4 position-relative"
-            onClick={() => {
-              setImgPath(oneone);
-            }}
-          >
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <img src={oneone} className="w-100" alt="" />
-          </div>
-          <div
-            className=" overflow-hidden parentt col-md-4 position-relative"
-            onClick={() => {
-              setImgPath(tow);
-            }}
-          >
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <img src={tow} className="w-100" alt="" />
-          </div>
 
-          <div className=" overflow-hidden parentt col-md-4 position-relative"  onClick={() => {
-              setImgPath(three);
-            }}>
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <img src={three} className="w-100" alt="" />
-          </div>
-          <div
-            className=" overflow-hidden parentt col-md-4 position-relative"
-            onClick={() => {
-              setImgPath(oneone);
-            }}
-          >
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <img src={oneone} className="w-100" alt="" />
-          </div>
-          <div
-            className=" overflow-hidden parentt col-md-4 position-relative"
-            onClick={() => {
-              setImgPath(tow);
-            }}
-          >
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <img src={tow} className="w-100" alt="" />
-          </div>
-
-          <div className=" overflow-hidden parentt col-md-4 position-relative"  onClick={() => {
-              setImgPath(three);
-            }}>
-            <div className="layout position-absolute top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-info">
-              <i className="fa-regular fa-square-plus mt-4 "></i>
-            </div>
-            <img src={three} className="w-100" alt="" />
-          </div>
-
-         
-        </div>
-      </div>
-
-      {imgPath ? (
-        <div
-          onClick={() => {
-            setImgPath("");
-          }}
-          className="Box-Layout bg-opacity-25 g position-fixed top-0 end-0 start-0 bottom-0 bg-danger d-flex justify-content-center align-items-center"
-        >
-          <img onClick={(e)=>{
-            e.stopPropagation()
-          }} src={imgPath} className="w-50" alt="" />
-        </div>
-      ) : (
-        ""
-      )}
     </>
   );
 }

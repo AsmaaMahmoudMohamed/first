@@ -7,7 +7,7 @@ export default function About() {
 
   <div className="myhome">  
   <div className={`${style.myabout}`}>
- <h1 className='text-white'>About Component</h1>
+ <h1 className='text-white text-center'>About Component</h1>
  <div className='d-flex  justify-content-center gap-2 position-relative '>   
  <div className='h-25 w-25 border-1 border-white me-4 mt-2 gap-4 position-absolute boutton-0 end-50 bg-white'> </div>
  <div>  <i className="fa-solid fa-star fs-4 text-white "></i></div>
